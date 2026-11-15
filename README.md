@@ -1,6 +1,6 @@
-# Swar Guru: AI Audio Analyzer
+# Speech Intelligence Dashboard
 
-An intelligent, web-based audio intelligence and speech analytics application. Swar Guru enables users to record spoken audio directly through a browser or upload audio files to perform automated speech-to-text transcription, named entity extraction, IAB topic classification, sentence-level sentiment analysis, interactive gauge visualizations, and large language model (LLM) powered executive summarization.
+An intelligent, web-based audio intelligence and speech analytics application. The Speech Intelligence Dashboard enables users to record spoken audio directly through a browser or upload audio files to perform automated speech-to-text transcription, named entity extraction, IAB topic classification, sentence-level sentiment analysis, interactive gauge visualizations, and large language model (LLM) powered executive summarization.
 
 ---
 
@@ -35,7 +35,7 @@ An intelligent, web-based audio intelligence and speech analytics application. S
 
 ## Project Overview
 
-**Swar Guru** ("Swar" meaning *voice* or *sound* in Sanskrit/Hindi, and "Guru" meaning *master* or *guide*) is a single-page application (SPA) built with React 18, Vite, and Chakra UI. It serves as an end-to-end voice processing and audio analysis workstation.
+The **Speech Intelligence Dashboard** is a single-page application (SPA) built with React 18, Vite, and Chakra UI. It serves as an end-to-end voice processing and audio analysis workstation.
 
 The application accepts spoken audio from two sources:
 1. Live in-browser microphone recording.
@@ -60,7 +60,7 @@ Spoken audio is one of the most common mediums for meetings, customer support ca
 
 ## Proposed Solution
 
-Swar Guru resolves these issues by delivering an automated, multi-tiered audio analytics pipeline accessible through an intuitive graphical user interface:
+The Speech Intelligence Dashboard resolves these issues by delivering an automated, multi-tiered audio analytics pipeline accessible through an intuitive graphical user interface:
 - **Asynchronous Cloud Transcription**: Offloads compute-heavy speech recognition to AssemblyAI, returning word-for-word transcriptions with high accuracy.
 - **Contextual Entity & Topic Tagging**: Automatically surfaces recognized entities with hover tooltips and categorizes discussion domains using standardized IAB taxonomy.
 - **Color-Coded Sentiment Inspection**: Highlights individual sentences in the transcript according to sentiment polarity (green for positive, pink for negative, gray for neutral) and provides aggregated sentiment groups.
@@ -279,7 +279,7 @@ flowchart TD
 ## Project Structure
 
 ```
-Swar_Guru/
+speech-intelligence-dashboard/
 ├── .gitignore                      # Git exclusion rules (node_modules, build artifacts, logs)
 ├── eslint.config.js                # ESLint 9 flat configuration with React rules
 ├── index.html                      # Single-page application entry HTML template
@@ -384,8 +384,8 @@ Swar_Guru/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/KrishPatel-AI/Swar_Guru.git
-   cd Swar_Guru
+   git clone https://github.com/KrishPatel-AI/speech-intelligence-dashboard.git
+   cd speech-intelligence-dashboard
    ```
 
 2. **Install Dependencies**:
@@ -527,7 +527,7 @@ npm run lint
 }
 ```
 
-### Resulting Output in Swar Guru
+### Resulting Output in Speech Intelligence Dashboard
 - **Transcription Tab**: Renders sentences with corresponding background tints. Hovering over `"London"` reveals a tooltip reading `location`; hovering over `"John"` reveals `person`.
 - **Keyword Tab**:
   - Topics Detected: `CustomerService`, `Software`
